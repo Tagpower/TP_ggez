@@ -15,9 +15,9 @@ public class TestFibonacci {
 	private static int fibonacci(int rang) {
 		if (rang == 0 || rang == 1) {
 			return rang;
-		} else if (rang > 1) {
+		} else if (rang > 1) { //Rang positif
 			return fibonacci(rang-1) + fibonacci(rang-2);
-		} else {
+		} else { //rang négatif
 			return (int)Math.pow(-1, rang-1)*fibonacci(-rang);
 		}
 	}
